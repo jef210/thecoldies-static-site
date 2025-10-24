@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Coldies</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-gray-50 min-h-screen">
     <!-- Header Section -->
@@ -33,6 +35,24 @@
                 </div>
             </div>
             
+            <!-- New Video Section -->
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-6">
+                    Friday 10/24/25
+                </h3>
+                <div class="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+                    <iframe 
+                        class="absolute inset-0 w-full h-full" 
+                        src="https://www.youtube.com/embed/kAS7ydLP5dM?si=1nDswKejg_onQkUO&rel=0&modestbranding=1" 
+                        title="The Coldies - Latest Performance" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            
             <!-- Content Section -->
             <div class="max-w-4xl mx-auto text-center">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
@@ -49,14 +69,33 @@ We're diggin' through the cooler for something to quench a profound musical thir
             </div>
         </section>
 
-        <section>
-                        <!-- Hero Image - Centered and Standard Size -->
+        <!-- Video Hero Section -->
+        <section class="mb-16">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-8">
+                    Cold Shock Therapy For Your Ear Holes
+                </h2>
+                <p class="text-lg text-gray-600 mb-8">
+                   
+                </p>
+            </div>
+            
+            <!-- Responsive YouTube Video -->
             <div class="flex justify-center mb-12">
                 <div class="w-full max-w-4xl">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oKBtJt1Hevc?si=zQ4aMCVCBy5wK1Q9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="relative aspect-video rounded-lg overflow-hidden shadow-lg">
+                        <iframe 
+                            class="absolute inset-0 w-full h-full" 
+                            src="https://www.youtube.com/embed/oKBtJt1Hevc?si=zQ4aMCVCBy5wK1Q9" 
+                            title="The Coldies - Live Performance" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
                 </div>
             </div>
-           
         </section>
 
         <!-- Image Gallery Section -->
@@ -173,10 +212,39 @@ We're diggin' through the cooler for something to quench a profound musical thir
     <footer class="bg-gray-800 text-white py-8 mt-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p class="text-lg md:text-xl">
-                The Coldies - Chillin N Grillin
+                Get In Touch
             </p>
+            
+            <!-- Social Media Icons -->
+            <div class="flex justify-center space-x-6 mt-4 mb-4">
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/thecoldies/" class="text-gray-400 hover:text-blue-500 transition-colors duration-300" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-facebook-f text-2xl"></i>
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/coldiesband/" class="text-gray-400 hover:text-pink-500 transition-colors duration-300" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <!-- YouTube 
+                <a href="#" class="text-gray-400 hover:text-red-500 transition-colors duration-300" aria-label="YouTube">
+                    <i class="fab fa-youtube text-2xl"></i>
+                </a> -->
+                <!-- Spotify 
+                <a href="#" class="text-gray-400 hover:text-green-500 transition-colors duration-300" aria-label="Spotify">
+                    <i class="fab fa-spotify text-2xl"></i>
+                </a> -->
+                <!-- SoundCloud 
+                <a href="#" class="text-gray-400 hover:text-orange-500 transition-colors duration-300" aria-label="SoundCloud">
+                    <i class="fab fa-soundcloud text-2xl"></i>
+                </a>-->
+                <!-- Bandcamp 
+                <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300" aria-label="Bandcamp">
+                    <i class="fab fa-bandcamp text-2xl"></i>
+                </a> -->
+            </div>
+            
             <p class="text-sm text-gray-400 mt-2">
-                info@thecoldies.com is currently being set up. hit us on Facbook or Instagram for the time being.
+                <a href="mailto:info@thecoldies.com" class="text-gray-400 hover:underline">info@thecoldies.com</a>
             </p>
         </div>
     </footer>
